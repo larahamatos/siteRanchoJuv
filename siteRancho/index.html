@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Site oficial da Invernada Juvenil do CTG Rancho da Saudade - tradição, cultura e juventude.">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>CTG Rancho da Saudade</title>
+  <link rel="icon" href="./icon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header id="cabecalho">
+    
+    <img src="./img.png" alt="Logo do CTG Rancho da Saudade" id="logo" />
+    <div class="titulo-site">
+      <h1>CTG Rancho da Saudade</h1>
+      <h2>Invernada Juvenil</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#banner">Início</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#inscricao">Inscrição</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="banner">
+      <img src="./foto3.jpg" alt="Banner da invernada dançando" class="banner-img" />
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre a Invernada Juvenil</h2>
+      <p>A Invernada Juvenil do CTG Rancho da Saudade é composta por jovens entre 14 e 17 anos, apaixonados pela cultura
+        gaúcha. Com ensaios regulares, vivências culturais e apresentações marcantes, representamos Cachoeirinha/RS com
+        orgulho e dedicação.</p>
+    </section>
+
+    <section id="historia">
+      <h2>Nossa História</h2>
+      <p>Fundado em 1981, o CTG Rancho da Saudade é referência estadual em tradição gaúcha. A invernada juvenil surgiu
+        com o propósito de formar jovens talentos, promovendo o amor pelo tradicionalismo desde cedo. Já conquistamos
+        diversos títulos, com destaque para:</p>
+      <table class="tabela-premiacoes">
+        <thead>
+          <tr>
+            <th>Ano</th>
+            <th>Conquista</th>
+            <th>Temática</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2017</td>
+            <td>Primeira vitória no JuvEnart</td>
+            <td>IRGA, vida que brota da terra</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>Bicampeões estaduais</td>
+            <td>As cavalhadas</td>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>Tricampeões estaduais</td>
+            <td>Homenagem a Os Serranos</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>Bicampeonao consecutivo</td>
+            <td>Tributo ao filme “Para Pedro” e à memória do gaúcho antigo</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <section id="equipe">
+      <h2>Instrutores e Coordenação</h2>
+      <div class="equipe">
+        <div class="membro">
+          <h3>Marcela Coelho e Nyckollas Ourique</h3>
+          <p>Instrutores da invernada juvenil</p>
+        </div>
+        <div class="membro">
+          <h3>Daniella Gomes e Fabio Luciano</h3>
+          <p>Coordenadores da invernada</p>
+        </div>
+        <div class="membro">
+          <h3>Guilherme Chula e Caroline Leite </h3>
+          <p>Coreógrafos</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria de Eventos</h2>
+      <div class="container">
+        <img src="./foto1.jpg" alt="Evento 1" width="300" height="200">
+        <img src="./foto2.jpg" alt="Evento 2" width="300" height="200">
+        <img src="./WhatsApp Image 2025-06-10 at 14.52.24.jpeg" alt="Evento 3" width="300" height="200">
+        <img src="./foto4.jpg" alt="Evento 4" width="300" height="200">
+        <img src="./foto6.jpg" alt="Evento 5" width="300" height="200">
+        <img src="./foto7.jpg" alt="Evento 6" width="300" height="200">
+      </div>
+    </section>
+
+
+    <section id="depoimentos">
+      <h2>Depoimentos</h2>
+      <blockquote>
+        “Participar da invernada mudou minha vida. Aprendi sobre cultura, respeito e fiz amizades para sempre.”
+        <footer>— Giovana Rodrigues, 17 anos, participou da invrnada em 2022, 2023, 2024 e 2025</footer>
+      </blockquote>
+      <blockquote>
+        “É emocionante ver nossos filhos no palco. O CTG Rancho da Saudade é uma segunda família.”
+        <footer>— Aline Anselmo, mãe de integrante</footer>
+      </blockquote>
+    </section>
+
+    <h2 id="inscrito">Inscrição</h2>
+    <section id="inscricao">
+      <h2>Formulário de Inscrição - Invernada Juvenil</h2>
+      <form class="form-inscricao" action="#" method="POST">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="14" max="17" placeholder="Entre 14 e 17 anos" required />
+
+        <label for="telefone">Telefone / WhatsApp:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+        <label for="mensagem">Mensagem (opcional):</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Já dançou em alguma outra invernada?"></textarea>
+
+        <button type="submit">Enviar inscrição</button>
+      </form>
+
+      <script>
+        window.addEventListener("DOMContentLoaded", function () {
+          document.querySelector(".form-inscricao").addEventListener("submit", function (event) {
+            event.preventDefault();
+            window.location.href = "inscricao.html"; 
+          });
+        });
+      </script>
+
+    </section>
+
+    <section id="contato">
+      <h2>Contate-nos</h2>
+      <p>Estamos à disposição para dúvidas, eventos e inscrições:</p>
+      <div class="contacto-info">
+        <div><strong>Email:</strong> <a href="mailto:contato@ctgrancho.com">contato@ctgrancho.com</a></div>
+        <div><strong>WhatsApp:</strong> <a href="https://wa.me/5551984223779" target="_blank">+55 (51) 98422-3779</a>
+        </div>
+        <div><strong>Localização:</strong> Ritter, 2626 | Cachoeirinha, Rio Grande do Sul</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CTG Rancho da Saudade</p>
+    <p><strong>Funcionamento:</strong> Segunda a Sexta - 18h às 22h | Sábados - 14h às 20h</p>
+    <a href="https://wa.me/5551984223779" class="whatsapp" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+      <img src="./whatsapp_15015928.png" alt="WhatsApp" />
+    </a>
+    <a href="https://www.facebook.com/ranchodasaudade"><img src="./assets/face.png" alt="Facebook" /></a>
+    <a href="https://www.instagram.com/ctgranchodasaudade"><img src="./assets/insta.png" alt="Instagram" /></a>
+  </footer>
+</body>
+
+</html>

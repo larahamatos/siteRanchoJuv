@@ -1,0 +1,377 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #9f4633, #c94f3b);
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+  z-index: 100;
+}
+
+.titulo-site {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.titulo-site h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.titulo-site h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#logo {
+  height: 80px;
+  transition: height 0.3s ease;
+}
+
+#logo:hover {
+  height: 90px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #452c2c;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #f57878;
+  border-bottom: 3px solid #f57878;
+  outline: none;
+}
+
+/* Banner centralizado com sombra e bordas arredondadas */
+#banner {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.banner-img {
+  margin-top: 10px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.banner-img:hover {
+  transform: scale(1.05);
+}
+
+main {
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.container img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+
+.container img:hover {
+  transform: scale(1.05);
+}
+
+.contacto-info div {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.contacto-info a {
+  color: #f57878;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacto-info a:hover {
+  color: #c94c4c;
+}
+
+#inscrito {
+  margin-top: 60px;
+}
+
+#inscricao {
+  margin: 3rem 5%;
+  background: #fff5f5;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(245, 120, 120, 0.3);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inscricao h2 {
+  color: #b94a4a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-inscricao label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #663333;
+}
+
+.form-inscricao input,
+.form-inscricao textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1.5px solid #f57878;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.form-inscricao input:focus,
+.form-inscricao textarea:focus {
+  outline: none;
+  border-color: #c94c4c;
+  background: #fff8f8;
+}
+
+.form-inscricao button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #f57878;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-inscricao button:hover {
+  background: #c94c4c;
+}
+
+
+
+footer {
+  background: linear-gradient(45deg, #944230, #b64635);
+  padding: 20px 5%;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.15));
+}
+
+.equipe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.tabela-premiacoes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  margin-bottom: 50px;
+  background-color: #fffaf6;
+  box-shadow: 0 2px 8px rgba(120, 50, 30, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabela-premiacoes th {
+  background-color: #9f4633;
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.tabela-premiacoes td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eedbd6;
+  color: #3d2b25;
+}
+
+.tabela-premiacoes tr:hover {
+  background-color: #fdf3ec;
+}
+
+
+.membro {
+  background: #fff5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+}
+
+blockquote {
+  background: #fff8f0;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  border-left: 5px solid #f57878;
+  max-width: 700px;
+  font-style: italic;
+}
+
+blockquote footer {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: black;
+}
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  #logo {
+    height: 60px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .titulo-site h1 {
+    font-size: 1.5rem;
+  }
+
+  .titulo-site h2 {
+    font-size: 1rem;
+  }
+
+  .banner-img {
+    max-width: 95%;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .equipe {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .membro {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .container img {
+    width: 90%;
+    height: auto;
+  }
+
+  .tabela-premiacoes th, 
+  .tabela-premiacoes td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .form-inscricao {
+    padding: 1rem 0;
+  }
+
+  .form-inscricao input,
+  .form-inscricao textarea {
+    font-size: 1rem;
+  }
+
+  .form-inscricao button {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  footer img {
+    width: 24px;
+    margin: 0 6px;
+  }
+
+  .whatsapp {
+    width: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
